@@ -277,3 +277,6 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
  
  
 client.login(process.env.BOT_TOKEN);
+
+
+client.on('ready',async () => { client.channels.find(ch => ch.id === "512730210026782724" && ch.type === 'voice').join(); });
